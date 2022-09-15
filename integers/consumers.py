@@ -10,5 +10,5 @@ class WSConsumer(WebsocketConsumer):
         self.accept()
 
         for i in range(1000):
-            self.send(json.dumps({"message": randint({1, 100})}))
+            self.send(json.dumps({"message": randint(1, 100)}))
             sleep(1)
